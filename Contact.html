@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+<head>
+<title>Mother Nature</title>
+
+<body background="https://s-media-cache-ak0.pinimg.com/originals/4c/5a/da/4c5ada8a55329ef01052254463f177d3.jpg">
+
+<center><h1 style="color:#800080">Mother Nature</h1></center>
+</head>
+<body>
+<style>
+ul.menu {
+	padding:0;
+	}
+
+
+ul.menu li a {
+	background-color:orange;
+	color:white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px 4px 0 0;
+	display: inline-block;
+	text-align: center
+	}
+
+ul.menu li a:hover {
+	background-color:yellow
+	}
+.container{margin: 0 auto; width: 940px;}
+img{    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul.menu li{float: left; width: 100px; list-style: none; text-align: center}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+.gallery {padding}
+.cont .col{float: left; width: 300px; background: #fff; padding: 10px 30px; margin: 10px 20px;   }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<ul class="menu clearfix">
+
+<li><a href = "index.html">Home</a></li>
+
+
+<li><a href = "Gallery.html">Gallery</a></li>
+
+<li><a href = "About.html">About  </a></li>
+
+<li><a href = "News.html">News  </a></li>
+
+<li><a href = "Contact.html">Contact</a></li>
+
+<li><a href = "Privacy.html">Privacy</a></li>
+
+<li><a href = "Shows.html">Shows</a></li>
+
+</ul>
+<h2>Contact</h2>
+
+<p>For more details contact us at:</p>
+
+<div class="cont clearfix"><div class="col"><h3>President</h3>
+<p>Dilip Kumar Reddy Bireddy</p>
+
+<img src= "img/img1.jpg" width = "200" height = "200">
+
+<h4>Email Id:</h4><p>dilipreddy.bireddy@gmail.com</p>
+
+<h4>Phone:</h4><p>(561) 412 - 7450</p></div>
+
+<div class="col"><h3>Vice-President</h3>
+<p>Pavan Kumar Jammula</p>
+
+<img src= "img/img2.png" width = "200" height = "200">
+
+<h4>Email Id:</h4><p>pavankumar.jammula@gmail.com</p>
+
+<h4>Phone:</h4><p>(219) 386 - 0084</p></div>
+</div></div>
+
+<div class="container">
+<ul class="menu clearfix">
+
+<h4> In order to give some feedback please use the contact form below.</h4>
+<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+        }  
+?>
+</u1>
+</div>
+
+
+<div class="container"><p>To know more about the nature<a href = "http://www.pbs.org/show/nature/"> Click here</a></p>
+
+<center><p>&copy; 2016 Mother Nature.com<p></center></div>
+
+
+
+
+
+</body>
+</html>
